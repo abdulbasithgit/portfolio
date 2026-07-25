@@ -157,6 +157,20 @@ ul { margin: 0; padding: 0; list-style: none; }
 .nav-links a.active { color: #fff; background: var(--surface-2); }
 .nav-cta { margin-left: 8px; }
 
+.lang-btn {
+  font: inherit;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.lang-btn:hover { background: var(--surface-2); border-color: rgba(124, 92, 255, 0.5); }
+
 .nav-toggle {
   display: none;
   background: var(--surface);
@@ -287,7 +301,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .about-lead { font-size: 1.05rem; color: var(--text); }
 .about p { color: var(--muted); }
 .info-list li { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--muted); }
-.info-list li span { color: #fff; min-width: 92px; font-weight: 600; }
+.info-list li span:first-child { color: #fff; min-width: 92px; font-weight: 600; }
 .info-list li:last-child { border-bottom: none; }
 
 .service-icon {
@@ -474,4 +488,31 @@ ul { margin: 0; padding: 0; list-style: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- RTL / Arabic ---------- */
+[dir="rtl"] { font-family: "Cairo", "Inter", system-ui, -apple-system, sans-serif; }
+[dir="rtl"] body,
+[dir="rtl"] .lead,
+[dir="rtl"] .about-lead,
+[dir="rtl"] .section-intro,
+[dir="rtl"] .subtitle,
+[dir="rtl"] .tl-role,
+[dir="rtl"] .bullets li,
+[dir="rtl"] .award p { line-height: 1.9; }
+
+[dir="rtl"] .nav-cta { margin-left: 0; margin-right: 8px; }
+
+[dir="rtl"] .timeline::before { left: auto; right: 20px; }
+[dir="rtl"] .tl-item { padding-left: 0; padding-right: 62px; }
+[dir="rtl"] .tl-item::before { left: auto; right: 12px; }
+[dir="rtl"] .tl-item .tl-card:hover { transform: translateX(-4px); }
+[dir="rtl"] .tl-item ul.bullets li { padding: 4px 20px 4px 0; }
+[dir="rtl"] .tl-item ul.bullets li::before { content: "◃"; left: auto; right: 0; }
+
+[dir="rtl"] .hero-portrait .chip-1 { left: auto; right: -6%; }
+[dir="rtl"] .hero-portrait .chip-2 { right: auto; left: -6%; }
+
+@media (max-width: 992px) {
+  [dir="rtl"] .nav-cta { margin-right: 0; }
 }

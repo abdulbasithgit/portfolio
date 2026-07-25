@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,19 +25,21 @@
         <div class="container">
             <a href="#home" class="brand">
                 <span class="brand-badge">AB</span>
-                <span>Abdul Basith<small>AI Full Stack Technical Lead</small></span>
+                <span>Abdul Basith<small data-i18n="brand.role">AI Full Stack Technical Lead</small></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
                 <i class="ti-menu"></i>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certs">Certifications</a></li>
-                <li class="nav-cta"><a class="btn btn-primary" href="#contact">Let's talk</a></li>
+                <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#certs" data-i18n="nav.certs">Certifications</a></li>
+                <li class="nav-lang"><button id="langToggle" class="lang-btn" type="button"
+                        aria-label="Switch language">العربية</button></li>
+                <li class="nav-cta"><a class="btn btn-primary" href="#contact" data-i18n="nav.cta">Let's talk</a></li>
             </ul>
         </div>
     </nav>
@@ -47,17 +49,17 @@
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-copy reveal">
-                    <span class="status"><span class="dot"></span> Available for high-impact roles</span>
-                    <h1>Hi, I'm <span class="grad">Abdul Basith</span></h1>
-                    <p class="role">AI Full Stack Technical Lead</p>
-                    <p class="lead">
+                    <span class="status"><span class="dot"></span> <span data-i18n="hero.status">Available for high-impact roles</span></span>
+                    <h1 data-i18n="hero.title">Hi, I'm <span class="grad">Abdul Basith</span></h1>
+                    <p class="role" data-i18n="hero.role">AI Full Stack Technical Lead</p>
+                    <p class="lead" data-i18n="hero.lead">
                         10+ years building enterprise Angular &amp; React applications and Java/Python backends
                         across Banking, Airlines, Energy and Ed-Tech. Currently leading real-time drilling
                         platforms and an LLM-powered assistant at Saudi Aramco.
                     </p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary"><i class="ti-layout-grid2"></i> View my work</a>
-                        <a href="#contact" class="btn btn-ghost"><i class="ti-email"></i> Get in touch</a>
+                        <a href="#projects" class="btn btn-primary"><i class="ti-layout-grid2"></i> <span data-i18n="hero.work">View my work</span></a>
+                        <a href="#contact" class="btn btn-ghost"><i class="ti-email"></i> <span data-i18n="hero.contact">Get in touch</span></a>
                     </div>
                     <div class="hero-socials">
                         <a class="icon-btn" href="https://www.linkedin.com/in/abdul-basith-2457a5101/"
@@ -82,10 +84,10 @@
     <section class="section" style="padding-top: 0;">
         <div class="container">
             <div class="stats reveal">
-                <div class="stat-card"><div class="num" data-count="10">10+</div><div class="label">Years of Experience</div></div>
-                <div class="stat-card"><div class="num" data-count="8">8+</div><div class="label">Enterprise SPAs</div></div>
-                <div class="stat-card"><div class="num" data-count="7">7+</div><div class="label">Developers Led</div></div>
-                <div class="stat-card"><div class="num" data-count="5">5</div><div class="label">Industry Domains</div></div>
+                <div class="stat-card"><div class="num" data-count="10">10+</div><div class="label" data-i18n="stats.exp">Years of Experience</div></div>
+                <div class="stat-card"><div class="num" data-count="8">8+</div><div class="label" data-i18n="stats.spa">Enterprise SPAs</div></div>
+                <div class="stat-card"><div class="num" data-count="7">7+</div><div class="label" data-i18n="stats.led">Developers Led</div></div>
+                <div class="stat-card"><div class="num" data-count="5">5</div><div class="label" data-i18n="stats.domains">Industry Domains</div></div>
             </div>
         </div>
     </section>
@@ -93,32 +95,32 @@
     <!-- About -->
     <section class="section about" id="about">
         <div class="container">
-            <span class="eyebrow reveal">About me</span>
-            <h2 class="section-title reveal">Turning complex domain data into <span class="grad">fast, reliable UI</span></h2>
+            <span class="eyebrow reveal" data-i18n="about.eyebrow">About me</span>
+            <h2 class="section-title reveal" data-i18n="about.title">Turning complex domain data into <span class="grad">fast, reliable UI</span></h2>
             <div class="about-grid">
                 <div class="reveal">
-                    <p class="about-lead">
+                    <p class="about-lead" data-i18n="about.p1">
                         I'm an AI Full Stack Technical Lead who ships production-grade software end-to-end — from
                         Angular/React front-ends to Java &amp; Python FastAPI backends, deployed on OpenShift.
                     </p>
-                    <p>
+                    <p data-i18n="about.p2">
                         At Saudi Aramco I lead a cross-functional team building the SAIRO and Well&nbsp;Connect
                         drilling platforms: real-time well-log visualization with Geotoolkit, FastAPI services, and an
                         LLM-powered assistant that lets drilling engineers query rig and well data in natural language.
                         Before that, I led the Ultra LMS rewrite at Blackboard, mentoring a team of 7+ engineers.
                     </p>
-                    <p>
+                    <p data-i18n="about.p3">
                         I care about performance (lazy loading, code splitting, memoization), clean architecture
                         (micro-frontends, SOLID), and developer experience — reusable components, strong reviews, and TDD.
                     </p>
                 </div>
                 <div class="reveal">
                     <ul class="info-list card" style="padding: 22px 24px;">
-                        <li><span>Name</span> Abdul Basith M U</li>
-                        <li><span>Role</span> AI Full Stack Technical Lead</li>
-                        <li><span>Location</span> Saudi Arabia / Chennai, India</li>
-                        <li><span>Email</span> muabdulbasith@outlook.com</li>
-                        <li><span>Phone</span> +91&nbsp;80566&nbsp;82866</li>
+                        <li><span data-i18n="about.name">Name</span> Abdul Basith M U</li>
+                        <li><span data-i18n="about.roleLabel">Role</span> <span data-i18n="hero.role">AI Full Stack Technical Lead</span></li>
+                        <li><span data-i18n="about.location">Location</span> <span data-i18n="about.locationVal">Saudi Arabia / Chennai, India</span></li>
+                        <li><span data-i18n="about.email">Email</span> muabdulbasith@outlook.com</li>
+                        <li><span data-i18n="about.phone">Phone</span> +91&nbsp;80566&nbsp;82866</li>
                     </ul>
                 </div>
             </div>
@@ -126,20 +128,20 @@
             <div class="grid grid-3" style="margin-top: 40px;">
                 <div class="card reveal">
                     <div class="service-icon"><i class="ti-thought"></i></div>
-                    <h3>AI &amp; LLM Integration</h3>
-                    <p class="subtitle">Conversational assistants, prompt engineering, and LLM APIs wired into real
+                    <h3 data-i18n="svc1.h">AI &amp; LLM Integration</h3>
+                    <p class="subtitle" data-i18n="svc1.p">Conversational assistants, prompt engineering, and LLM APIs wired into real
                         production data.</p>
                 </div>
                 <div class="card reveal">
                     <div class="service-icon"><i class="ti-layout-media-left"></i></div>
-                    <h3>Front-End Architecture</h3>
-                    <p class="subtitle">Scalable Angular &amp; React apps — micro-frontends, state management, and
+                    <h3 data-i18n="svc2.h">Front-End Architecture</h3>
+                    <p class="subtitle" data-i18n="svc2.p">Scalable Angular &amp; React apps — micro-frontends, state management, and
                         reusable component systems.</p>
                 </div>
                 <div class="card reveal">
                     <div class="service-icon"><i class="ti-server"></i></div>
-                    <h3>Backend &amp; DevOps</h3>
-                    <p class="subtitle">Java Spring Boot &amp; Python FastAPI APIs, containerized and shipped through
+                    <h3 data-i18n="svc3.h">Backend &amp; DevOps</h3>
+                    <p class="subtitle" data-i18n="svc3.p">Java Spring Boot &amp; Python FastAPI APIs, containerized and shipped through
                         OpenShift CI/CD pipelines.</p>
                 </div>
             </div>
@@ -149,13 +151,13 @@
     <!-- Skills -->
     <section class="section" id="skills">
         <div class="container">
-            <span class="eyebrow reveal">Tech stack</span>
-            <h2 class="section-title reveal">Skills &amp; <span class="grad">technologies</span></h2>
-            <p class="section-intro reveal">A decade of hands-on work across the full stack — front-end, backend, data,
+            <span class="eyebrow reveal" data-i18n="skills.eyebrow">Tech stack</span>
+            <h2 class="section-title reveal" data-i18n="skills.title">Skills &amp; <span class="grad">technologies</span></h2>
+            <p class="section-intro reveal" data-i18n="skills.intro">A decade of hands-on work across the full stack — front-end, backend, data,
                 and delivery.</p>
             <div class="skills-grid">
                 <div class="skill-group card reveal">
-                    <h4>Front-End</h4>
+                    <h4 data-i18n="skills.g1">Front-End</h4>
                     <div class="tags">
                         <span class="tag">React</span><span class="tag">Angular 18</span><span class="tag">Next.js</span>
                         <span class="tag">TypeScript</span><span class="tag">RxJS</span><span class="tag">Angular Signals</span>
@@ -164,7 +166,7 @@
                     </div>
                 </div>
                 <div class="skill-group card reveal">
-                    <h4>Backend &amp; Data</h4>
+                    <h4 data-i18n="skills.g2">Backend &amp; Data</h4>
                     <div class="tags">
                         <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Python</span>
                         <span class="tag">FastAPI</span><span class="tag">Node.js</span><span class="tag">GraphQL</span>
@@ -173,7 +175,7 @@
                     </div>
                 </div>
                 <div class="skill-group card reveal">
-                    <h4>AI &amp; Cloud / DevOps</h4>
+                    <h4 data-i18n="skills.g3">AI &amp; Cloud / DevOps</h4>
                     <div class="tags">
                         <span class="tag">LLM Chatbots</span><span class="tag">Prompt Engineering</span><span class="tag">Conversational AI</span>
                         <span class="tag">OpenShift</span><span class="tag">Kubernetes</span><span class="tag">Docker</span>
@@ -181,7 +183,7 @@
                     </div>
                 </div>
                 <div class="skill-group card reveal">
-                    <h4>Testing &amp; Practices</h4>
+                    <h4 data-i18n="skills.g4">Testing &amp; Practices</h4>
                     <div class="tags">
                         <span class="tag">Jest</span><span class="tag">React Testing Library</span><span class="tag">Karma</span>
                         <span class="tag">Jasmine</span><span class="tag">WebdriverIO</span><span class="tag">TDD</span>
@@ -195,89 +197,89 @@
     <!-- Experience -->
     <section class="section" id="experience">
         <div class="container">
-            <span class="eyebrow reveal">Career</span>
-            <h2 class="section-title reveal">Work <span class="grad">experience</span></h2>
-            <p class="section-intro reveal">Leading and building enterprise applications across energy, banking,
+            <span class="eyebrow reveal" data-i18n="exp.eyebrow">Career</span>
+            <h2 class="section-title reveal" data-i18n="exp.title">Work <span class="grad">experience</span></h2>
+            <p class="section-intro reveal" data-i18n="exp.intro">Leading and building enterprise applications across energy, banking,
                 airlines, ed-tech and logistics.</p>
             <div class="timeline">
                 <div class="tl-item reveal">
                     <div class="tl-card">
-                        <div class="tl-head"><h3>Saudi Aramco</h3><span class="tl-date">Apr 2026 — Present</span></div>
-                        <p class="tl-role">Technical Lead · Drilling (SAIRO &amp; Well Connect)</p>
+                        <div class="tl-head"><h3>Saudi Aramco</h3><span class="tl-date">Apr 2026 — <span data-i18n="date.present">Present</span></span></div>
+                        <p class="tl-role" data-i18n="aramco.role">Technical Lead · Drilling (SAIRO &amp; Well Connect)</p>
                         <ul class="bullets">
-                            <li>Lead a cross-functional team delivering Angular 18, FastAPI and OpenShift solutions for real-time drilling platforms.</li>
-                            <li>Built an LLM-powered assistant so engineers can query real-time rig and well data in natural language.</li>
-                            <li>Engineered real-time well-log visualization with Geotoolkit — multiple concurrent tracks/curves used by 30+ engineers.</li>
-                            <li>Cut dashboard load times using RxJS forkJoin parallel calls, lazy loading and optimized change detection.</li>
+                            <li data-i18n="aramco.b1">Lead a cross-functional team delivering Angular 18, FastAPI and OpenShift solutions for real-time drilling platforms.</li>
+                            <li data-i18n="aramco.b2">Built an LLM-powered assistant so engineers can query real-time rig and well data in natural language.</li>
+                            <li data-i18n="aramco.b3">Engineered real-time well-log visualization with Geotoolkit — multiple concurrent tracks/curves used by 30+ engineers.</li>
+                            <li data-i18n="aramco.b4">Cut dashboard load times using RxJS forkJoin parallel calls, lazy loading and optimized change detection.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-card">
                         <div class="tl-head"><h3>Blackboard (Anthology)</h3><span class="tl-date">Nov 2022 — Mar 2026</span></div>
-                        <p class="tl-role">Technical Lead · Learn &amp; Ultra LMS</p>
+                        <p class="tl-role" data-i18n="bb.role">Technical Lead · Learn &amp; Ultra LMS</p>
                         <ul class="bullets">
-                            <li>Led and mentored 7+ developers, owning front-end architecture, code reviews and sprint planning for the Ultra LMS rewrite.</li>
-                            <li>Modernized components with ReactJS &amp; Angular 12; implemented a micro-frontend architecture across multiple micro-UI repos.</li>
-                            <li>Backend with Java &amp; Spring Boot on MySQL/Oracle/PostgreSQL; containerized with Docker &amp; Kubernetes.</li>
-                            <li>Set coding standards and testing with Jest, Jasmine and WebdriverIO automation.</li>
+                            <li data-i18n="bb.b1">Led and mentored 7+ developers, owning front-end architecture, code reviews and sprint planning for the Ultra LMS rewrite.</li>
+                            <li data-i18n="bb.b2">Modernized components with ReactJS &amp; Angular 12; implemented a micro-frontend architecture across multiple micro-UI repos.</li>
+                            <li data-i18n="bb.b3">Backend with Java &amp; Spring Boot on MySQL/Oracle/PostgreSQL; containerized with Docker &amp; Kubernetes.</li>
+                            <li data-i18n="bb.b4">Set coding standards and testing with Jest, Jasmine and WebdriverIO automation.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-card">
                         <div class="tl-head"><h3>Baker Hughes</h3><span class="tl-date">May 2021 — Nov 2022</span></div>
-                        <p class="tl-role">Senior Developer · Real-Track</p>
+                        <p class="tl-role" data-i18n="bh.role">Senior Developer · Real-Track</p>
                         <ul class="bullets">
-                            <li>Built a responsive Angular 9 SPA on microservices REST APIs with a micro-UI repository; led planning and effort management.</li>
-                            <li>Drove CI/CD with Jenkins and AWS, optimized performance via Angular AOT, and built reusable Highcharts components.</li>
+                            <li data-i18n="bh.b1">Built a responsive Angular 9 SPA on microservices REST APIs with a micro-UI repository; led planning and effort management.</li>
+                            <li data-i18n="bh.b2">Drove CI/CD with Jenkins and AWS, optimized performance via Angular AOT, and built reusable Highcharts components.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-card">
                         <div class="tl-head"><h3>Citi</h3><span class="tl-date">May 2020 — Apr 2021</span></div>
-                        <p class="tl-role">Angular Developer · Retail Portal Credit (RPC)</p>
+                        <p class="tl-role" data-i18n="citi.role">Angular Developer · Retail Portal Credit (RPC)</p>
                         <ul class="bullets">
-                            <li>Developed a responsive Angular 9 SPA driven by microservices REST APIs with custom reusable components and services.</li>
-                            <li>Designed UX screens, icons and SVG assets; deployed via AWS and resolved SONAR code-quality issues.</li>
+                            <li data-i18n="citi.b1">Developed a responsive Angular 9 SPA driven by microservices REST APIs with custom reusable components and services.</li>
+                            <li data-i18n="citi.b2">Designed UX screens, icons and SVG assets; deployed via AWS and resolved SONAR code-quality issues.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-card">
                         <div class="tl-head"><h3>United Airlines</h3><span class="tl-date">May 2019 — May 2020</span></div>
-                        <p class="tl-role">Angular Developer · UCrew Schedule</p>
+                        <p class="tl-role" data-i18n="ua.role">Angular Developer · UCrew Schedule</p>
                         <ul class="bullets">
-                            <li>Built a responsive Angular 6 SPA powered by Spring Boot microservices, using Cosmos DB for front-end data storage.</li>
-                            <li>Created custom reusable components and resolved UI defects raised during SIT and UAT.</li>
+                            <li data-i18n="ua.b1">Built a responsive Angular 6 SPA powered by Spring Boot microservices, using Cosmos DB for front-end data storage.</li>
+                            <li data-i18n="ua.b2">Created custom reusable components and resolved UI defects raised during SIT and UAT.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-card">
                         <div class="tl-head"><h3>CRISIL</h3><span class="tl-date">Jun 2018 — Apr 2019</span></div>
-                        <p class="tl-role">Angular Developer · Loan Originating System</p>
+                        <p class="tl-role" data-i18n="crisil.role">Angular Developer · Loan Originating System</p>
                         <ul class="bullets">
-                            <li>Developed an Angular 4 SPA from microservices using Bootstrap and PrimeNG per wireframes, with Karma/Jasmine unit tests.</li>
+                            <li data-i18n="crisil.b1">Developed an Angular 4 SPA from microservices using Bootstrap and PrimeNG per wireframes, with Karma/Jasmine unit tests.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-card">
                         <div class="tl-head"><h3>Standard Chartered Bank</h3><span class="tl-date">Nov 2016 — Jun 2018</span></div>
-                        <p class="tl-role">Angular Developer · Individual Client Master</p>
+                        <p class="tl-role" data-i18n="scb.role">Angular Developer · Individual Client Master</p>
                         <ul class="bullets">
-                            <li>Built an Angular 4 SPA from microservices with Bootstrap and PrimeNG; custom components and Karma/Jasmine tests.</li>
+                            <li data-i18n="scb.b1">Built an Angular 4 SPA from microservices with Bootstrap and PrimeNG; custom components and Karma/Jasmine tests.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-card">
                         <div class="tl-head"><h3>APL NOL Logistics</h3><span class="tl-date">Jun 2015 — Nov 2016</span></div>
-                        <p class="tl-role">UI Developer · Logistics Super Suite</p>
+                        <p class="tl-role" data-i18n="apl.role">UI Developer · Logistics Super Suite</p>
                         <ul class="bullets">
-                            <li>Built a responsive Angular SPA with custom directives and services using Bootstrap; resolved SIT/UAT defects.</li>
+                            <li data-i18n="apl.b1">Built a responsive Angular SPA with custom directives and services using Bootstrap; resolved SIT/UAT defects.</li>
                         </ul>
                     </div>
                 </div>
@@ -289,71 +291,71 @@
     <section class="section" id="projects">
         <div class="container">
             <div class="section-head-center">
-                <span class="eyebrow reveal">Portfolio</span>
-                <h2 class="section-title reveal">Companies &amp; <span class="grad">clients</span></h2>
-                <p class="section-intro reveal">A decade delivering enterprise applications for global organizations across industries.</p>
+                <span class="eyebrow reveal" data-i18n="projects.eyebrow">Portfolio</span>
+                <h2 class="section-title reveal" data-i18n="projects.title">Companies &amp; <span class="grad">clients</span></h2>
+                <p class="section-intro reveal" data-i18n="projects.intro">A decade delivering enterprise applications for global organizations across industries.</p>
             </div>
             <div class="filters reveal" id="filters">
-                <button class="active" data-filter="all">All</button>
-                <button data-filter="energy">Energy</button>
-                <button data-filter="banking">Banking &amp; Finance</button>
-                <button data-filter="edtech">Ed-Tech</button>
-                <button data-filter="airlines">Airlines</button>
-                <button data-filter="logistics">Logistics</button>
-                <button data-filter="consulting">Consulting &amp; IT</button>
+                <button class="active" data-filter="all" data-i18n="filter.all">All</button>
+                <button data-filter="energy" data-i18n="filter.energy">Energy</button>
+                <button data-filter="banking" data-i18n="filter.banking">Banking &amp; Finance</button>
+                <button data-filter="edtech" data-i18n="filter.edtech">Ed-Tech</button>
+                <button data-filter="airlines" data-i18n="filter.airlines">Airlines</button>
+                <button data-filter="logistics" data-i18n="filter.logistics">Logistics</button>
+                <button data-filter="consulting" data-i18n="filter.consulting">Consulting &amp; IT</button>
             </div>
             <div class="portfolio-grid" id="portfolioGrid">
                 <div class="pf-item reveal" data-category="energy">
                     <div class="pf-logo"><img src="assets/imgs/aramco.svg" alt="Saudi Aramco"></div>
-                    <div class="pf-caption"><span class="pf-tag">Energy</span><h4>Saudi Aramco — SAIRO &amp; Well Connect</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.energy">Energy</span><h4>Saudi Aramco — SAIRO &amp; Well Connect</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="edtech">
                     <div class="pf-logo"><img src="assets/imgs/advertising-1.jpg" alt="Blackboard"></div>
-                    <div class="pf-caption"><span class="pf-tag">Ed-Tech</span><h4>Blackboard — Ultra LMS</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.edtech">Ed-Tech</span><h4>Blackboard — Ultra LMS</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="energy">
                     <div class="pf-logo"><img src="assets/imgs/advertising-4.jpg" alt="Baker Hughes"></div>
-                    <div class="pf-caption"><span class="pf-tag">Energy</span><h4>Baker Hughes — Real-Track</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.energy">Energy</span><h4>Baker Hughes — Real-Track</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="banking">
                     <div class="pf-logo"><img src="assets/imgs/advertising-2.jpg" alt="Citi"></div>
-                    <div class="pf-caption"><span class="pf-tag">Banking &amp; Finance</span><h4>Citi — Retail Portal Credit</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.banking">Banking &amp; Finance</span><h4>Citi — Retail Portal Credit</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="airlines">
                     <div class="pf-logo"><img src="assets/imgs/advertising-3.jpg" alt="United Airlines"></div>
-                    <div class="pf-caption"><span class="pf-tag">Airlines</span><h4>United Airlines — UCrew</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.airlines">Airlines</span><h4>United Airlines — UCrew</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="banking">
                     <div class="pf-logo"><img src="assets/imgs/advertising-6.jpg" alt="Standard Chartered"></div>
-                    <div class="pf-caption"><span class="pf-tag">Banking &amp; Finance</span><h4>Standard Chartered — ICM</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.banking">Banking &amp; Finance</span><h4>Standard Chartered — ICM</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="banking">
                     <div class="pf-logo"><img src="assets/imgs/advertising-5.jpeg" alt="CRISIL"></div>
-                    <div class="pf-caption"><span class="pf-tag">Banking &amp; Finance</span><h4>CRISIL — Loan Origination</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.banking">Banking &amp; Finance</span><h4>CRISIL — Loan Origination</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="logistics">
                     <div class="pf-logo"><img src="assets/imgs/advertising-7.jpg" alt="APL Logistics"></div>
-                    <div class="pf-caption"><span class="pf-tag">Logistics</span><h4>APL — Logistics Super Suite</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.logistics">Logistics</span><h4>APL — Logistics Super Suite</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="edtech">
                     <div class="pf-logo"><img src="assets/imgs/web-1.jpg" alt="Anthology"></div>
-                    <div class="pf-caption"><span class="pf-tag">Ed-Tech</span><h4>Anthology</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.edtech">Ed-Tech</span><h4>Anthology</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="consulting">
                     <div class="pf-logo"><img src="assets/imgs/web-2.jpg" alt="Accenture"></div>
-                    <div class="pf-caption"><span class="pf-tag">Consulting &amp; IT</span><h4>Accenture</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.consulting">Consulting &amp; IT</span><h4>Accenture</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="consulting">
                     <div class="pf-logo"><img src="assets/imgs/web-4.jpg" alt="Capgemini"></div>
-                    <div class="pf-caption"><span class="pf-tag">Consulting &amp; IT</span><h4>Capgemini</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.consulting">Consulting &amp; IT</span><h4>Capgemini</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="consulting">
                     <div class="pf-logo"><img src="assets/imgs/web-5.jpg" alt="Tata Consultancy Services"></div>
-                    <div class="pf-caption"><span class="pf-tag">Consulting &amp; IT</span><h4>TCS</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.consulting">Consulting &amp; IT</span><h4>TCS</h4></div>
                 </div>
                 <div class="pf-item reveal" data-category="consulting">
                     <div class="pf-logo"><img src="assets/imgs/web-3.jpg" alt="Hexaware"></div>
-                    <div class="pf-caption"><span class="pf-tag">Consulting &amp; IT</span><h4>Hexaware</h4></div>
+                    <div class="pf-caption"><span class="pf-tag" data-i18n="filter.consulting">Consulting &amp; IT</span><h4>Hexaware</h4></div>
                 </div>
             </div>
         </div>
@@ -362,15 +364,15 @@
     <!-- Achievements -->
     <section class="section" id="achievements">
         <div class="container">
-            <span class="eyebrow reveal">Recognition</span>
-            <h2 class="section-title reveal">Awards &amp; <span class="grad">achievements</span></h2>
+            <span class="eyebrow reveal" data-i18n="achievements.eyebrow">Recognition</span>
+            <h2 class="section-title reveal" data-i18n="achievements.title">Awards &amp; <span class="grad">achievements</span></h2>
             <div class="award-list" style="margin-top: 30px;">
-                <div class="award reveal"><span class="medal"><i class="ti-medall"></i></span><p>Certificate of appreciation for “Accountability &amp; Integrity, Client Centricity &amp; Collaboration” — Anthology.</p></div>
-                <div class="award reveal"><span class="medal"><i class="ti-cup"></i></span><p>Accenture Excellence Award.</p></div>
-                <div class="award reveal"><span class="medal"><i class="ti-star"></i></span><p>Best High-Performance Award — Accenture.</p></div>
-                <div class="award reveal"><span class="medal"><i class="ti-announcement"></i></span><p>Certificate of Appreciation from client — Standard Chartered Bank.</p></div>
-                <div class="award reveal"><span class="medal"><i class="ti-thumb-up"></i></span><p>“Best Scrum Team” Award — TCS.</p></div>
-                <div class="award reveal"><span class="medal"><i class="ti-thought"></i></span><p>Delivered an LLM-powered assistant cutting manual data-lookup effort for Aramco drilling engineers.</p></div>
+                <div class="award reveal"><span class="medal"><i class="ti-medall"></i></span><p data-i18n="award1">Certificate of appreciation for “Accountability &amp; Integrity, Client Centricity &amp; Collaboration” — Anthology.</p></div>
+                <div class="award reveal"><span class="medal"><i class="ti-cup"></i></span><p data-i18n="award2">Accenture Excellence Award.</p></div>
+                <div class="award reveal"><span class="medal"><i class="ti-star"></i></span><p data-i18n="award3">Best High-Performance Award — Accenture.</p></div>
+                <div class="award reveal"><span class="medal"><i class="ti-announcement"></i></span><p data-i18n="award4">Certificate of Appreciation from client — Standard Chartered Bank.</p></div>
+                <div class="award reveal"><span class="medal"><i class="ti-thumb-up"></i></span><p data-i18n="award5">“Best Scrum Team” Award — TCS.</p></div>
+                <div class="award reveal"><span class="medal"><i class="ti-thought"></i></span><p data-i18n="award6">Delivered an LLM-powered assistant cutting manual data-lookup effort for Aramco drilling engineers.</p></div>
             </div>
         </div>
     </section>
@@ -379,25 +381,25 @@
     <section class="section" id="certs">
         <div class="container">
             <div class="section-head-center">
-                <span class="eyebrow reveal">Credentials</span>
-                <h2 class="section-title reveal">Certifications</h2>
+                <span class="eyebrow reveal" data-i18n="certs.eyebrow">Credentials</span>
+                <h2 class="section-title reveal" data-i18n="certs.title">Certifications</h2>
             </div>
             <div class="cert-grid">
                 <div class="cert reveal">
                     <div class="cert-img"><img src="assets/imgs/blog1.jpg" alt=""></div>
                     <div class="cert-body"><h4>SAFe® 5 Practitioner</h4>
-                        <span class="cert-link">Credly Certified Badge</span></div>
+                        <span class="cert-link" data-i18n="cert.credly">Credly Certified Badge</span></div>
                 </div>
                 <div class="cert reveal">
                     <div class="cert-img"><img src="assets/imgs/blog2.jpeg" alt=""></div>
                     <div class="cert-body"><h4>Anthropic — Claude 101</h4>
-                        <span class="cert-link">Certificate of Completion</span></div>
+                        <span class="cert-link" data-i18n="cert.completion">Certificate of Completion</span></div>
                 </div>
                 <div class="cert reveal">
                     <div class="cert-img"><img src="assets/imgs/blog3.jpeg" alt=""></div>
                     <div class="cert-body"><h4>Agile Software Development</h4>
                         <a class="cert-link" href="https://coursera.org/share/3f1a63907857cfc3d70ad9da6cf989e3"
-                            target="_blank" rel="noopener">View credential <i class="ti-angle-double-right"></i></a></div>
+                            target="_blank" rel="noopener"><span data-i18n="cert.view">View credential</span> <i class="ti-angle-double-right"></i></a></div>
                 </div>
                 <div class="cert reveal">
                     <div class="cert-img"><img src="assets/imgs/blog4.jpeg" alt=""></div>
@@ -408,13 +410,13 @@
                     <div class="cert-img"><img src="assets/imgs/blog5.jpeg" alt=""></div>
                     <div class="cert-body"><h4>Python Data Structures</h4>
                         <a class="cert-link" href="https://coursera.org/share/9d9aaba38ec0bc3e6dd8b1b7ce037595"
-                            target="_blank" rel="noopener">View credential <i class="ti-angle-double-right"></i></a></div>
+                            target="_blank" rel="noopener"><span data-i18n="cert.view">View credential</span> <i class="ti-angle-double-right"></i></a></div>
                 </div>
                 <div class="cert reveal">
                     <div class="cert-img"><img src="assets/imgs/blog6.jpeg" alt=""></div>
                     <div class="cert-body"><h4>Modern JavaScript: ES6 Basics</h4>
                         <a class="cert-link" href="https://coursera.org/share/be99af6eb44964b07835bb390d60f68d"
-                            target="_blank" rel="noopener">View credential <i class="ti-angle-double-right"></i></a></div>
+                            target="_blank" rel="noopener"><span data-i18n="cert.view">View credential</span> <i class="ti-angle-double-right"></i></a></div>
                 </div>
             </div>
         </div>
@@ -423,34 +425,34 @@
     <!-- Contact -->
     <section class="section" id="contact">
         <div class="container">
-            <span class="eyebrow reveal">Contact</span>
-            <h2 class="section-title reveal">Let's build something <span class="grad">great</span></h2>
+            <span class="eyebrow reveal" data-i18n="contact.eyebrow">Contact</span>
+            <h2 class="section-title reveal" data-i18n="contact.title">Let's build something <span class="grad">great</span></h2>
             <div class="contact-grid" style="margin-top: 30px;">
                 <div class="contact-card reveal">
                     <div class="contact-item">
                         <div class="c-icon"><i class="ti-mobile"></i></div>
-                        <div><div class="c-label">Phone</div><div class="c-val">+91&nbsp;80566&nbsp;82866&nbsp; · &nbsp;+966&nbsp;59643&nbsp;8139</div></div>
+                        <div><div class="c-label" data-i18n="contact.phone">Phone</div><div class="c-val">+91&nbsp;80566&nbsp;82866&nbsp; · &nbsp;+966&nbsp;59643&nbsp;8139</div></div>
                     </div>
                     <div class="contact-item">
                         <div class="c-icon"><i class="ti-email"></i></div>
-                        <div><div class="c-label">Email</div><div class="c-val">muabdulbasith@outlook.com</div></div>
+                        <div><div class="c-label" data-i18n="contact.email">Email</div><div class="c-val">muabdulbasith@outlook.com</div></div>
                     </div>
                     <div class="contact-item">
                         <div class="c-icon"><i class="ti-location-pin"></i></div>
-                        <div><div class="c-label">Location</div><div class="c-val">Saudi Arabia / Chennai, India</div></div>
+                        <div><div class="c-label" data-i18n="contact.location">Location</div><div class="c-val" data-i18n="about.locationVal">Saudi Arabia / Chennai, India</div></div>
                     </div>
                     <div class="contact-item">
                         <div class="c-icon"><i class="ti-linkedin"></i></div>
-                        <div><div class="c-label">LinkedIn</div><div class="c-val">in/abdul-basith-2457a5101</div></div>
+                        <div><div class="c-label" data-i18n="contact.linkedin">LinkedIn</div><div class="c-val">in/abdul-basith-2457a5101</div></div>
                     </div>
                 </div>
                 <div class="contact-cta reveal">
-                    <h3>Have a role or project in mind?</h3>
-                    <p>I'm open to Technical Lead and AI Full Stack opportunities. Let's talk about how I can help your team ship faster.</p>
+                    <h3 data-i18n="contact.h">Have a role or project in mind?</h3>
+                    <p data-i18n="contact.p">I'm open to Technical Lead and AI Full Stack opportunities. Let's talk about how I can help your team ship faster.</p>
                     <div class="hero-actions" style="margin: 8px 0 0;">
-                        <a class="btn btn-primary" href="mailto:muabdulbasith@outlook.com"><i class="ti-email"></i> Email me</a>
+                        <a class="btn btn-primary" href="mailto:muabdulbasith@outlook.com"><i class="ti-email"></i> <span data-i18n="contact.emailBtn">Email me</span></a>
                         <a class="btn btn-ghost" href="https://www.linkedin.com/in/abdul-basith-2457a5101/"
-                            target="_blank" rel="noopener" style="color:#fff;border-color:rgba(255,255,255,0.5)"><i class="ti-linkedin"></i> Connect</a>
+                            target="_blank" rel="noopener" style="color:#fff;border-color:rgba(255,255,255,0.5)"><i class="ti-linkedin"></i> <span data-i18n="contact.connect">Connect</span></a>
                     </div>
                 </div>
             </div>
@@ -466,7 +468,7 @@
                     aria-label="GitHub"><i class="ti-github"></i></a>
                 <a class="icon-btn" href="mailto:muabdulbasith@outlook.com" aria-label="Email"><i class="ti-email"></i></a>
             </div>
-            <p>&copy; <span id="year"></span> Abdul Basith M U · AI Full Stack Technical Lead</p>
+            <p>&copy; <span id="year"></span> <span data-i18n="footer.name">Abdul Basith M U · AI Full Stack Technical Lead</span></p>
         </div>
     </footer>
 
